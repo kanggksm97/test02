@@ -11,3 +11,8 @@ Iris_Data['target'] = Iris_Data['target'].map({0: "setosa", 1:"versicolor", 2:"v
 
 X_Data = Iris_Data.iloc[:, :-1]
 Y_Data = Iris_Data.iloc[:, [-1]]
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
